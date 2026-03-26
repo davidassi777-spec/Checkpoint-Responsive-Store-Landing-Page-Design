@@ -1,0 +1,30 @@
+/* === STYLES PERSONNALISÉS === */
+
+/* Bannière d'accueil */
+.hero {
+    background: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1200&h=600&fit=crop') center/cover no-repeat;
+    padding: 120px 20px;
+}
+
+/* Ombre sur le texte pour lisibilité sur l'image */
+.hero h1, .hero p {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Images des cartes : hauteur uniforme */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* === MEDIA QUERIES : Responsive === */
+
+/* Tablettes et mobiles */
+@media (max-width: 767px) {
+    .hero {
+        padding: 80px 15px;
+    }
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+}
